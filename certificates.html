@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aniket Kamble - Certificates</title>
+  <link rel="stylesheet" href="certificate.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- Dark Mode Toggle -->
+  <button id="darkToggle" style="position: fixed; top: 10px; right: 10px; padding: 10px;">🌙</button>
+
+  <header>
+    <h1>My Achievements</h1>
+  </header>
+
+  <section class="certificates">
+    <div class="container">
+      <div class="certificate-list">
+        <!-- Repeat this block for each certificate -->
+        <div class="certificate-item">
+          <img src="images/python.png" alt="Certificate 1" class="certificate-image" />
+          <h3>Python</h3>
+          <p>Issuer: HackerRank</p>
+          <p>Date: 11, March 2025</p>
+          <a href="#lightbox-1" class="view-btn"><i class="fas fa-eye"></i> View</a>
+        </div>
+        <div class="certificate-item">
+          <img src="images/iymc24.png" alt="Certificate 2" class="certificate-image" />
+          <h3>IYMC</h3>
+          <p>Issuer: International Youth Math Challenge</p>
+          <p>Date: 30, December 2024</p>
+          <a href="#lightbox-2" class="view-btn"><i class="fas fa-eye"></i> View</a>
+        </div>
+        <div class="certificate-item">
+          <img src="images/linux1.png" alt="Certificate 3" class="certificate-image" />
+          <h3>Linux</h3>
+          <p>Issuer: Kali Linux</p>
+          <p>Date: 11, December 2024</p>
+          <a href="#lightbox-3" class="view-btn"><i class="fas fa-eye"></i> View</a>
+        </div>
+        <div class="certificate-item">
+          <img src="images/linux2.png" alt="Certificate 4" class="certificate-image" />
+          <h3>Introduction to Kali Linux Basics</h3>
+          <p>Issuer: Simple Learn</p>
+          <p>Date: 9, December 2024</p>
+          <a href="#lightbox-4" class="view-btn"><i class="fas fa-eye"></i> View</a>
+        </div>
+        <div class="certificate-item">
+          <img src="images/CISCO1.png" alt="Certificate 5" class="certificate-image" />
+          <h3>Python Essentials 1</h3>
+          <p>Issuer: Cisco</p>
+          <p>Date: 8, April 2024</p>
+          <a href="#lightbox-5" class="view-btn"><i class="fas fa-eye"></i> View</a>
+        </div>
+        <div class="certificate-item">
+          <img src="images/NASSCOM.png" alt="Certificate 6" class="certificate-image" />
+          <h3>Digital 101-30 Hours</h3>
+          <p>Issuer: future skills prime</p>
+          <p>Date: 12, April 2025</p>
+          <a href="#lightbox-6" class="view-btn"><i class="fas fa-eye"></i> View</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightboxes -->
+  <div id="lightbox-1" class="lightbox">
+    <div class="lightbox-content">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img src="images/python.png" alt="Python Certificate" />
+      <div class="lightbox-caption">HackerRank</div>
+    </div>
+  </div>
+  <div id="lightbox-2" class="lightbox">
+    <div class="lightbox-content">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img src="images/iymc24.png" alt="IYMC Certificate" />
+      <div class="lightbox-caption">International Youth Math Challenge</div>
+    </div>
+  </div>
+  <div id="lightbox-3" class="lightbox">
+    <div class="lightbox-content">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img src="images/linux1.png" alt="Linux Certificate" />
+      <div class="lightbox-caption">Kali Linux</div>
+    </div>
+  </div>
+  <div id="lightbox-4" class="lightbox">
+    <div class="lightbox-content">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img src="images/linux2.png" alt="Linux Basics Certificate" />
+      <div class="lightbox-caption">Simple Learn</div>
+    </div>
+  </div>
+  <div id="lightbox-5" class="lightbox">
+    <div class="lightbox-content">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img src="images/CISCO1.png" alt="Cisco Certificate" />
+      <div class="lightbox-caption">Cisco</div>
+    </div>
+  </div>
+  <div id="lightbox-6" class="lightbox">
+    <div class="lightbox-content">
+      <a href="#" class="close-lightbox">&times;</a>
+      <img src="images/NASSCOM.png" alt="NASSCOM Certificate" />
+      <div class="lightbox-caption">Digital 101-30 Hours</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Aniket Kamble. All rights reserved.</p>
+  </footer>
+
+  <!-- Lightbox Background Close Script -->
+  <script>
+    document.querySelectorAll(".lightbox").forEach((box) => {
+      box.addEventListener("click", function (e) {
+        if (e.target === box) {
+          window.location.hash = "";
+        }
+      });
+    });
+
+    // Dark mode toggle
+    document.getElementById("darkToggle").addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+</html>

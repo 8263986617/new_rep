@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aniket Kamble - YouTube</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <style>
+    .hero-banner {
+      background: linear-gradient(to right, #ff0000, #cc0000);
+      color: white;
+      padding: 100px 20px 60px;
+      text-align: center;
+    }
+
+    .hero-banner h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-banner p {
+      font-size: 1.2rem;
+      color: #f8f9fa;
+    }
+
+    .youtube-gallery {
+      padding: 80px 20px;
+      background: #f1f1f1;
+    }
+
+    .youtube-gallery h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .video-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .video-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .video-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .video-card iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+
+    .video-title {
+      padding: 15px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    @media (max-width: 500px) {
+      .hero-banner h1 {
+        font-size: 2rem;
+      }
+      .video-card iframe {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <div class="logo">Kamble Aniket</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="youtube.html">YouTube</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-banner">
+    <h1><i class="fab fa-youtube"></i> My YouTube Channel Videos</h1>
+    <p>Check out some of my latest tech and creative content</p>
+  </section>
+
+  <!-- YouTube Video Gallery -->
+  <section class="youtube-gallery">
+    <h2>Featured Videos</h2>
+    <div class="video-card-grid">
+      
+      <!-- Video 1: Linux Basics -->
+      <div class="video-card">
+        <iframe 
+          width="100%" 
+          height="315" 
+          src="https://www.youtube.com/embed/yrnP2xpja68" 
+          title="INTRODUCTION TO BASICS COMMANDS IN LINUX" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+        <div class="video-title">Linux Basic Commands</div>
+      </div>
+  
+      <!-- Video 2 Placeholder -->
+      <div class="video-card">
+        <iframe width="914" height="514" src="https://www.youtube.com/embed/xsjh4nZra4c" title="MIT Academy of Engineering College Pune | MIT College Pune Campus #mitaoe #mitwpu #mitadt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-title">MIT AOE CAMPUS</div>
+      </div>
+  
+      <!-- Video 3 Placeholder -->
+      <div class="video-card">
+        <iframe
+        width="914"
+        height="514"
+        src="https://www.youtube.com/embed/XjR2JUghGK0" 
+        title="Understanding the While Loop in Python" 
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+
+        </iframe>
+        <div class="video-title">While Loop in Python</div>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">Kamble Aniket</div>
+      <p>BTech Computer Science Student | Developer | YouTuber</p>
+      <!-- <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="youtube.html">YouTube</a>
+        <a href="index.html#contact">Contact</a>
+      </div> -->
+      <div class="copyright">
+        &copy; 2025 Kamble Aniket. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
